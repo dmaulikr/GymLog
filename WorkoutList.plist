@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hardcore Full Body Blitz</key>
+	<dict>
+		<key>description</key>
+		<string> This workout is designed for the hardcore heavy lifting junkie. It uses the three powerlifts as a foundation and a few supplementary exercises. This system is coupled with a long rest period for maximal growth and recovery. You will experience unparalleled gains in strength and mass, with a minimum of post workout soreness</string>
+		<key>tag</key>
+		<array>
+			<string>hardcore</string>
+		</array>
+	</dict>
+	<key>The 18-Minute Home Dumbbell Workout</key>
+	<dict>
+		<key>tag</key>
+		<array>
+			<string>home</string>
+		</array>
+		<key>description</key>
+		<string>This workout of just under 20-minutes proved adequate to build strength and size in just six weeks with dumbbell exercises! Learn how you can to!</string>
+	</dict>
+	<key>1 X 2 Workout</key>
+	<dict>
+		<key>tag</key>
+		<array>
+			<string>compound</string>
+		</array>
+		<key>description</key>
+		<string>This is a simple, yet effective, whole body routine done twice a week using basic compound exercises. Great for those who need to get in and get out of the gym due to time constraints. Also good for us hard gainers with fast metabolisms. Give it a try. You&apos;ll be pleasantly surprised how you feel afterwards if you go as heavy as you can.</string>
+	</dict>
+</dict>
+</plist>

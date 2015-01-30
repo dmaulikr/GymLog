@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BodyPartInfo" representedClassName="BodyPartInfo" syncable="YES">
+        <attribute name="body_part_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExerciseInfo" inverseName="body_part_r" inverseEntity="ExerciseInfo" syncable="YES"/>
+        <relationship name="gl_exercise_r" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="GLExerciseInfo" inverseName="body_part_r" inverseEntity="GLExerciseInfo" syncable="YES"/>
+    </entity>
+    <entity name="DayInfo" representedClassName="DayInfo" syncable="YES">
+        <attribute name="day_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="ExerciseInfo" inverseName="day_r" inverseEntity="ExerciseInfo" syncable="YES"/>
+        <relationship name="workout_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutInfo" inverseName="day_r" inverseEntity="WorkoutInfo" syncable="YES"/>
+    </entity>
+    <entity name="ExerciseInfo" representedClassName="ExerciseInfo" syncable="YES">
+        <attribute name="date_added" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="equipment_type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exercise_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exercise_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number_of_reps" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="number_of_sets" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="body_part_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BodyPartInfo" inverseName="exercise_r" inverseEntity="BodyPartInfo" syncable="YES"/>
+        <relationship name="day_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DayInfo" inverseName="exercise_r" inverseEntity="DayInfo" syncable="YES"/>
+        <relationship name="gl_exercise_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GLExerciseInfo" syncable="YES"/>
+        <relationship name="icon_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ExIconInfo" inverseName="exercise_r" inverseEntity="ExIconInfo" syncable="YES"/>
+        <relationship name="set_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="SetInfo" inverseName="exercise_r" inverseEntity="SetInfo" syncable="YES"/>
+        <relationship name="workout_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HistoryInfo" inverseName="exercise_r" inverseEntity="HistoryInfo" syncable="YES"/>
+    </entity>
+    <entity name="ExIconInfo" representedClassName="ExIconInfo" syncable="YES">
+        <attribute name="icon_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_path" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExerciseInfo" inverseName="icon_r" inverseEntity="ExerciseInfo" syncable="YES"/>
+        <relationship name="gl_exercise_r" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="GLExerciseInfo" inverseName="icon_r" inverseEntity="GLExerciseInfo" syncable="YES"/>
+    </entity>
+    <entity name="GLDayInfo" representedClassName="GLDayInfo" syncable="YES">
+        <attribute name="created_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="day_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="object_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GLExerciseInfo" inverseName="day_r" inverseEntity="GLExerciseInfo" syncable="YES"/>
+        <relationship name="workout_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GLWorkoutInfo" inverseName="day_r" inverseEntity="GLWorkoutInfo" syncable="YES"/>
+    </entity>
+    <entity name="GLExerciseInfo" representedClassName="GLExerciseInfo" syncable="YES">
+        <attribute name="date_added" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="equipment_type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exercise_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number_of_reps" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="number_of_sets" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="object_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relation_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="body_part_r" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="BodyPartInfo" inverseName="gl_exercise_r" inverseEntity="BodyPartInfo" syncable="YES"/>
+        <relationship name="day_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GLDayInfo" inverseName="exercise_r" inverseEntity="GLDayInfo" syncable="YES"/>
+        <relationship name="icon_r" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="ExIconInfo" inverseName="gl_exercise_r" inverseEntity="ExIconInfo" syncable="YES"/>
+        <relationship name="set_r" optional="YES" toMany="YES" deletionRule="No Action" ordered="YES" destinationEntity="SetInfo" inverseName="gl_exercise_r" inverseEntity="SetInfo" syncable="YES"/>
+    </entity>
+    <entity name="GLWorkoutInfo" representedClassName="GLWorkoutInfo" syncable="YES">
+        <attribute name="create_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="workout_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="day_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="GLDayInfo" inverseName="workout_r" inverseEntity="GLDayInfo" syncable="YES"/>
+    </entity>
+    <entity name="HistoryInfo" representedClassName="HistoryInfo" syncable="YES">
+        <attribute name="workout_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="workout_duration" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="workout_end_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="workout_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_start_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ExerciseInfo" inverseName="workout_r" inverseEntity="ExerciseInfo" syncable="YES"/>
+    </entity>
+    <entity name="SetInfo" representedClassName="SetInfo" syncable="YES">
+        <attribute name="object_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="set_repetitions" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="set_weight" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercise_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExerciseInfo" inverseName="set_r" inverseEntity="ExerciseInfo" syncable="YES"/>
+        <relationship name="gl_exercise_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GLExerciseInfo" inverseName="set_r" inverseEntity="GLExerciseInfo" syncable="YES"/>
+    </entity>
+    <entity name="TagInfo" representedClassName="TagInfo" syncable="YES">
+        <attribute name="tag_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tag_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="workout_r" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutInfo" inverseName="tag_r" inverseEntity="WorkoutInfo" syncable="YES"/>
+    </entity>
+    <entity name="WorkoutInfo" representedClassName="WorkoutInfo" syncable="YES">
+        <attribute name="create_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="owner_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workout_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="day_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="DayInfo" inverseName="workout_r" inverseEntity="DayInfo" syncable="YES"/>
+        <relationship name="tag_r" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="TagInfo" inverseName="workout_r" inverseEntity="TagInfo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BodyPartInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DayInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ExerciseInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ExIconInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GLDayInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GLExerciseInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GLWorkoutInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="HistoryInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SetInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TagInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="WorkoutInfo" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Back</key>
+	<array>
+		<dict>
+			<key>exercise_name</key>
+			<string>Barbell Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Dumbbell Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Lateral Pulldown</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Sumo Deadlift</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Seated Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Inverted Pullup</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>T-Bar Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Chinups</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Hyperextension</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Seated One-Arm Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Sled Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Dumbbell Shurgs</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Kettlebell Row</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>2</string>
+		</dict>
+	</array>
+	<key>Chest</key>
+	<array>
+		<dict>
+			<key>exercise_name</key>
+			<string>Kinesis Chest Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Flat Bench Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Incline Bench Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Decline Bench Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Dumbbell Flyes</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Incline Cable Flyes</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Cable Crossover</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Hammer Strength Chest Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>TechnoGym Chest Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Floor Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Pushups </string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Clap Pushups</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+	</array>
+	<key>Abs</key>
+	<array>
+		<dict>
+			<key>exercise_name</key>
+			<string>Weighted Situps</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Standard Crunch</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Jacknife</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Russian Twist</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>TechnoGym Ab Machine</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Kneeling Cable Crunches</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+	</array>
+	<key>Legs</key>
+	<array>
+		<dict>
+			<key>exercise_name</key>
+			<string>ATG Squat</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Front Squat</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Sumo Squat</string>
+			<key>icon_list</key>
+			<array>
+				<string>barbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>1</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Glut-Ham Raise</string>
+			<key>icon_list</key>
+			<array>
+				<string>bw_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>5</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Seated Leg Extension</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Seated Leg Curl</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Lying Leg Curl</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Leg Press</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Hack Squat</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Dumbbell Lunges</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>2</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Seated Calf Raises</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_loaded_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Standing Calf Raises</string>
+			<key>icon_list</key>
+			<array>
+				<string>plate_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>3</string>
+		</dict>
+		<dict>
+			<key>exercise_name</key>
+			<string>Goblin Squats</string>
+			<key>icon_list</key>
+			<array>
+				<string>dumbbell_icon</string>
+			</array>
+			<key>equipment_type</key>
+			<string>2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
